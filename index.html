@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vivobook Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="img/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just notebook<br />It's <span>Vivobook</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            blanditiis repellat! Amet quos ab magnam tenetur reprehenderit! Quo
+            doloremque ab, sint consequatur corporis quis!
+          </p>
+          <a href="#">SOURCE CODE</a>
+        </div>
+        <div class="imgBox">
+          <img src="img/black.png" class="vivobook" />
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li><img src="img/black.png" onclick="imgSlider('img/black.png'); changeCircleColor('#404040')"></li>
+        <li><img src="img/silver.png" onclick="imgSlider('img/silver.png'); changeCircleColor('#9b9b9b')"></li>
+        <li><img src="img/gold.png" onclick="imgSlider('img/gold.png'); changeCircleColor('#ebd6c9')"></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="https://facebook.com/rizqiwoii27"><img src="img/facebook.png"></img></a></li>
+        <li><a href="https://twitter.com/rizqiwoii"><img src="img/twitter.png"></img></a></li>
+        <li><a href="https://instagram.com/rizqiwoii"><img src="img/instagram.png"></img></a></li>
+        <li><a href="https://github.com/rizqiwoii"><img src="img/github.png"></img></a></li>
+
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.vivobook').src = anything;
+    }
+
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+
+
+    </script>
+  </body>
+</html>
